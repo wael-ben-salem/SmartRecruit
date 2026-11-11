@@ -1,0 +1,17 @@
+<section id="multimodal" data-transition="fade" style="background:#F4F2EC;color:#1C2433;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;color:#0E5F8F;text-transform:uppercase">Multimodality · PDF CVs</p>
+<h2 style="font-family:'Manrope', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#16233A">No CV is lost because of its layout</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(3, 1fr);gap:24px">
+<div style="background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px"><p style="font-size:24px;font-weight:700;color:#0E5F8F">CASE 1 · CHEAP PATH</p><h3 style="font-size:32px;font-weight:700">Simple text PDF</h3><p style="font-size:24px;line-height:1.4;color:#4A5568">Direct text extraction in n8n, no model call</p></div>
+<div style="background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px"><p style="font-size:24px;font-weight:700;color:#0E5F8F">CASE 2 · LAYOUT</p><h3 style="font-size:32px;font-weight:700">Columns, tables, icons</h3><p style="font-size:24px;line-height:1.4;color:#4A5568">Page rendered as an image; vision model rebuilds the reading order</p></div>
+<div style="background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px;padding:32px;display:flex;flex-direction:column;gap:12px"><p style="font-size:24px;font-weight:700;color:#0E5F8F">CASE 3 · IMAGE</p><h3 style="font-size:32px;font-weight:700">Scanned CV</h3><p style="font-size:24px;line-height:1.4;color:#4A5568">Vision model reads the page image (OCR + structure)</p></div>
+</div>
+<div style="background:#16233A;border-radius:16px;padding:32px 40px;display:flex;flex-direction:row;gap:40px">
+<p style="flex:1;font-size:28px;line-height:1.4;color:#F4F2EC"><span style="color:#F0A04B">Router:</span> too few characters per page, or a jumbled reading order, sends the CV to the vision path.</p>
+<p style="flex:1;font-size:28px;line-height:1.4;color:#F4F2EC"><span style="color:#F0A04B">Test:</span> [10] CVs with varied layouts, field accuracy for text-only vs vision.</p>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:900px;font-size:24px;color:#6B7280">SmartRecruit · Week 1 check-in · 11</p>
+<aside>Multimodality is useful here: real CVs are designed documents. Text extraction is enough for simple PDFs and cheap; the vision model is used only when needed. Page numbers carry through to the evidence shown to the recruiter.</aside>
+</section>

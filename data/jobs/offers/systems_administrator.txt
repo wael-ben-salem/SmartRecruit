@@ -1,0 +1,21 @@
+Systems Administrator
+
+Job Number: R0178194
+Systems Administrator
+Key Role: 
+Manage a standalone lab network that includes VMWare servers, Cisco switches, Windows domain controllers, and 60+ Linux and Windows workstations. Build, configure, and maintain hardware components and install, configure, and maintain software components. Research and recommend new hardware solutions and support the system security process.
+Basic Qualifications:
+Experienced with Windows AdminExperience with NAS setupsExperience with Agency security requirements and implementation of STE mechanismsKnowledge of VMware ESXiKnowledge of LinuxKnowledge of Cisco switchesTS/SCI clearance with a polygraphBachelor's degree in Technology and 15+ years of experience with systems administration, or 20+ years of experience with systems administration in lieu of a degree
+Additional Qualifications:
+Experience with Isilon storage arrayKnowledge of Centrify
+Clearance:
+Applicants selected will be subject to a security investigation and may need to meet eligibility requirements for access to classified information; TS/SCI clearance with polygraph is required.
+Compensation
+At Booz Allen, we celebrate your contributions, provide you with opportunities and choices, and support your total well-being. Our offerings include health, life, disability, financial, and retirement benefits, as well as paid leave, professional development, tuition assistance, work-life programs, and dependent care. Our recognition awards program acknowledges employees for exceptional performance and superior demonstration of our values. Full-time and part-time employees working at least 20 hours a week on a regular basis are eligible to participate in Booz Allen's benefit programs. Individuals that do not meet the threshold are only eligible for select offerings, not inclusive of health benefits. We encourage you to learn more about our total benefits by visiting the Resource page on our Careers site and reviewing Our Employee Benefits page.
+Salary at Booz Allen is determined by various factors, including but not limited to location, the individual's particular combination of education, knowledge, skills, competencies, and experience, as well as contract-specific affordability and organizational requirements. The projected compensation range for this position is $73,100.00 to $166,000.00 (annualized USD). The estimate displayed represents the typical salary range for this position and is just one component of Booz Allen's total compensation package for employees.
+Work Model
+Our people-first culture prioritizes the benefits of flexibility and collaboration, whether that happens in person or remotely.
+If this position is listed as remote or hybrid, you'll periodically work from a Booz Allen or client site facility.
+If this position is listed as onsite, you'll work with colleagues and clients in person, as needed for the specific role.
+EEO Commitment
+We're an equal employment opportunity/affirmative action employer that empowers our people to fearlessly drive change – no matter their race, color, ethnicity, religion, sex (including pregnancy, childbirth, lactation, or related medical conditions), national origin, ancestry, age, marital status, sexual orientation, gender identity and expression, disability, veteran status, military or uniformed service member status, genetic information, or any other status protected by applicable federal, state, local, or international law.

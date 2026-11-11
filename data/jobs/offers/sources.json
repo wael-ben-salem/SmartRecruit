@@ -1,0 +1,23 @@
+[
+  {
+    "file": "it_manager.txt",
+    "job_id": "3757496271",
+    "title": "Information Technology Manager",
+    "url": "https://www.linkedin.com/jobs/view/3757496271/?trk=jobs_biz_prem_srch",
+    "dataset": "xanderios/linkedin-job-postings (MIT)"
+  },
+  {
+    "file": "it_support_specialist.txt",
+    "job_id": "3754918008",
+    "title": "IT Support Specialist",
+    "url": "https://www.linkedin.com/jobs/view/3754918008/?trk=jobs_biz_prem_srch",
+    "dataset": "xanderios/linkedin-job-postings (MIT)"
+  },
+  {
+    "file": "systems_administrator.txt",
+    "job_id": "3699082310",
+    "title": "Systems Administrator",
+    "url": "https://www.linkedin.com/jobs/view/3699082310/?trk=jobs_biz_prem_srch",
+    "dataset": "xanderios/linkedin-job-postings (MIT)"
+  }
+]

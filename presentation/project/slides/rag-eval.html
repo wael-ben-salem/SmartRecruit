@@ -1,0 +1,28 @@
+<section id="rag-eval" data-transition="fade" style="background:#F4F2EC;color:#1C2433;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;color:#0E5F8F;text-transform:uppercase">RAG · Retrieval and evaluation</p>
+<h2 style="font-family:'Manrope', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#16233A">We measure retrieval before we trust it</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:32px">
+<div style="flex:1;background:#FBFBF8;border:1px solid #E2DED4;border-radius:20px;padding:40px;display:flex;flex-direction:column;gap:20px">
+<h3 style="font-size:32px;font-weight:700;color:#0E5F8F">Retrieval setup</h3>
+<div style="display:flex;flex-direction:row;gap:20px"><p style="width:190px;font-size:24px;font-weight:700;color:#6B7280">Embeddings</p><p style="flex:1;font-size:24px">bge-m3 (FR / EN), local via Ollama</p></div>
+<div style="display:flex;flex-direction:row;gap:20px"><p style="width:190px;font-size:24px;font-weight:700;color:#6B7280">Vector store</p><p style="flex:1;font-size:24px">Qdrant, native n8n node</p></div>
+<div style="display:flex;flex-direction:row;gap:20px"><p style="width:190px;font-size:24px;font-weight:700;color:#6B7280">Top-k</p><p style="flex:1;font-size:24px">5 per requirement</p></div>
+<div style="display:flex;flex-direction:row;gap:20px"><p style="width:190px;font-size:24px;font-weight:700;color:#6B7280">Filters</p><p style="flex:1;font-size:24px">candidate_id, CV section</p></div>
+<div style="display:flex;flex-direction:row;gap:20px"><p style="width:190px;font-size:24px;font-weight:700;color:#6B7280">Reranking</p><p style="flex:1;font-size:24px">bge-reranker, kept only if it improves the metrics</p></div>
+</div>
+<div style="flex:1;background:#16233A;border-radius:20px;padding:40px;display:flex;flex-direction:column;gap:20px">
+<h3 style="font-size:32px;font-weight:700;color:#F0A04B">Evaluation plan</h3>
+<ul style="font-size:24px;line-height:1.5;color:#C9D2DE">
+<li>30 test queries, e.g. “Has the candidate used Kubernetes?”</li>
+<li>Relevant chunks labelled by 2 annotators</li>
+<li>Metrics: Recall@5, MRR, nDCG@5</li>
+<li>Chunking A (sections) vs B (recursive 500/50)</li>
+<li>Failures documented, not hidden</li>
+</ul>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:900px;font-size:24px;color:#6B7280">SmartRecruit · Week 1 check-in · 10</p>
+<aside>Week 2 milestone: corpus collected, both chunkers implemented, first retrieval numbers on the 30 queries.</aside>
+</section>

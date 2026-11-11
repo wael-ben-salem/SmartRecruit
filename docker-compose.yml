@@ -1,0 +1,52 @@
+# SmartRecruit stack: n8n (orchestrator) + API (agents & tools) + Qdrant (vector store) + Ollama (embeddings)
+#   docker compose up -d --build
+#   docker compose exec ollama ollama pull bge-m3
+services:
+  n8n:
+    image: n8nio/n8n:1.106.3
+    ports: ["5678:5678"]
+    environment:
+      - N8N_SECURE_COOKIE=false
+      - GENERIC_TIMEZONE=Africa/Tunis
+      - N8N_DIAGNOSTICS_ENABLED=false
+      - API_URL=http://api:8000
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./n8n:/workflows:ro
+    depends_on: [api]
+
+  api:
+    build: ./api
+    ports: ["8000:8000"]
+    env_file: .env
+    environment:
+      - QDRANT_URL=http://qdrant:6333
+      - OLLAMA_URL=http://ollama:11434
+      - N8N_WEBHOOK_URL=http://n8n:5678/webhook/smartrecruit
+      - PROMPTS_DIR=/app/prompts
+      - DATA_DIR=/app/data
+    volumes:
+      - ./prompts:/app/prompts:ro
+      - ./data:/app/data
+      - ./scripts:/app/scripts:ro
+      - ./eval:/app/eval
+      - ./api/smartrecruit:/app/api/smartrecruit:ro   # code changes without rebuilding the image
+      - ./dashboard/dist:/app/dashboard/dist:ro       # React dashboard (npm run build)
+    depends_on: [qdrant, ollama]
+
+  qdrant:
+    image: qdrant/qdrant:v1.15.1
+    ports: ["6333:6333"]
+    volumes:
+      - qdrant_data:/qdrant/storage
+
+  ollama:
+    image: ollama/ollama:0.11.4
+    ports: ["11434:11434"]
+    volumes:
+      - ollama_data:/root/.ollama
+
+volumes:
+  n8n_data:
+  qdrant_data:
+  ollama_data:

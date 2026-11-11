@@ -1,0 +1,343 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "v2": {
+    "score": {
+      "catch_rate": 0.9,
+      "false_alarm_rate": 0.0,
+      "exact_verdict": 0.893,
+      "not_answered": 0,
+      "missed": [
+        "O03",
+        "O09"
+      ],
+      "false_alarms": []
+    },
+    "checks": {
+      "S01": {
+        "requirement_id": "S01",
+        "verdict": "overstated",
+        "comment": "Quote shows technical support experience, but does not explicitly prove a minimum of 1 year.",
+        "suggested_status": "partial"
+      },
+      "S02": {
+        "requirement_id": "S02",
+        "verdict": "supported",
+        "comment": "Quote indicates handling Windows OS and Mac OS products."
+      },
+      "S03": {
+        "requirement_id": "S03",
+        "verdict": "supported",
+        "comment": "Associate's Degree in Computer Information Systems satisfies the related field requirement."
+      },
+      "S04": {
+        "requirement_id": "S04",
+        "verdict": "supported",
+        "comment": "Active Directory knowledge supports a partial status for the requirement."
+      },
+      "S05": {
+        "requirement_id": "S05",
+        "verdict": "supported",
+        "comment": "Quotes explicitly mention routers and switches."
+      },
+      "S06": {
+        "requirement_id": "S06",
+        "verdict": "supported",
+        "comment": "Quote demonstrates hands-on experience packaging services with Docker."
+      },
+      "S07": {
+        "requirement_id": "S07",
+        "verdict": "supported",
+        "comment": "C1 level TOEIC 945 indicates professional English."
+      },
+      "S08": {
+        "requirement_id": "S08",
+        "verdict": "supported",
+        "comment": "School project with Spark Streaming supports partial experience."
+      },
+      "O01": {
+        "requirement_id": "O01",
+        "verdict": "overstated",
+        "comment": "Quotes show media equipment duties, but no duration of 1 year is proven.",
+        "suggested_status": "partial"
+      },
+      "O02": {
+        "requirement_id": "O02",
+        "verdict": "overstated",
+        "comment": "Quote shows customer service tasks, but does not establish 2 years of duration.",
+        "suggested_status": "partial"
+      },
+      "O03": {
+        "requirement_id": "O03",
+        "verdict": "supported",
+        "comment": "Active Directory knowledge supports the requirement."
+      },
+      "O04": {
+        "requirement_id": "O04",
+        "verdict": "overstated",
+        "comment": "Quote mentions 16 years as a leader of change, not specifically a customer service position.",
+        "suggested_status": "missing"
+      },
+      "O05": {
+        "requirement_id": "O05",
+        "verdict": "overstated",
+        "comment": "Quote shows an academic project, which does not constitute 3 years of professional experience.",
+        "suggested_status": "missing"
+      },
+      "O06": {
+        "requirement_id": "O06",
+        "verdict": "overstated",
+        "comment": "Quote shows an internship from March to August 2025 (less than 6 months), not 2 years.",
+        "suggested_status": "partial"
+      },
+      "O07": {
+        "requirement_id": "O07",
+        "verdict": "overstated",
+        "comment": "Basic SQL from a school course does not meet strong SQL skills.",
+        "suggested_status": "partial"
+      },
+      "O08": {
+        "requirement_id": "O08",
+        "verdict": "overstated",
+        "comment": "B1 level is intermediate, not professional English.",
+        "suggested_status": "partial"
+      },
+      "U01": {
+        "requirement_id": "U01",
+        "verdict": "unsupported",
+        "comment": "Quotes list generic skills and interests, not an industry certification."
+      },
+      "U02": {
+        "requirement_id": "U02",
+        "verdict": "unsupported",
+        "comment": "A bachelor's degree in management does not demonstrate network protocols understanding."
+      },
+      "U03": {
+        "requirement_id": "U03",
+        "verdict": "unsupported",
+        "comment": "Football coaching quote has no relation to Windows or MacOS."
+      },
+      "U04": {
+        "requirement_id": "U04",
+        "verdict": "unsupported",
+        "comment": "Node.js and TypeScript do not mention Kubernetes."
+      },
+      "U05": {
+        "requirement_id": "U05",
+        "verdict": "unsupported",
+        "comment": "Power BI dashboards do not mention cloud platforms like Azure or AWS."
+      },
+      "U06": {
+        "requirement_id": "U06",
+        "verdict": "unsupported",
+        "comment": "Team player quote does not show CI/CD practices."
+      },
+      "U07": {
+        "requirement_id": "U07",
+        "verdict": "overstated",
+        "comment": "Preparatory classes in math and physics do not constitute an engineering or CS Master's degree.",
+        "suggested_status": "missing"
+      },
+      "U08": {
+        "requirement_id": "U08",
+        "verdict": "unsupported",
+        "comment": "Quote mentions general operations and problem-solving, not Active Directory environments."
+      },
+      "S09": {
+        "requirement_id": "S09",
+        "verdict": "supported",
+        "comment": "Dates from 01/2021 to 06/2023 clearly show over 1 year of technical support experience."
+      },
+      "O09": {
+        "requirement_id": "O09",
+        "verdict": "supported",
+        "comment": "Distributing and instructing on equipment use supports hardware/software troubleshooting experience."
+      },
+      "O10": {
+        "requirement_id": "O10",
+        "verdict": "overstated",
+        "comment": "Word, Excel, and Outlook usage does not equate to Microsoft 365 administration.",
+        "suggested_status": "missing"
+      },
+      "O11": {
+        "requirement_id": "O11",
+        "verdict": "overstated",
+        "comment": "Selling networking equipment in retail does not demonstrate supporting network infrastructure.",
+        "suggested_status": "missing"
+      }
+    }
+  },
+  "v3": {
+    "score": {
+      "catch_rate": 0.95,
+      "false_alarm_rate": 0.0,
+      "exact_verdict": 0.929,
+      "not_answered": 0,
+      "missed": [
+        "O03"
+      ],
+      "false_alarms": []
+    },
+    "checks": {
+      "S01": {
+        "requirement_id": "S01",
+        "verdict": "overstated",
+        "comment": "Quote shows support duties but lacks explicit 1-year duration.",
+        "suggested_status": "partial"
+      },
+      "S02": {
+        "requirement_id": "S02",
+        "verdict": "supported",
+        "comment": "Quotes directly show repairing Windows and Mac OS products."
+      },
+      "S03": {
+        "requirement_id": "S03",
+        "verdict": "supported",
+        "comment": "Associate's degree in Computer Information Systems matches the requirement."
+      },
+      "S04": {
+        "requirement_id": "S04",
+        "verdict": "supported",
+        "comment": "Partial status correctly reflects knowledge without deep professional proof."
+      },
+      "S05": {
+        "requirement_id": "S05",
+        "verdict": "supported",
+        "comment": "Supporting routers and switches directly shows hardware knowledge."
+      },
+      "S06": {
+        "requirement_id": "S06",
+        "verdict": "supported",
+        "comment": "Packaging services with Docker shows hands-on experience."
+      },
+      "S07": {
+        "requirement_id": "S07",
+        "verdict": "supported",
+        "comment": "C1 TOEIC 945 proves professional English."
+      },
+      "S08": {
+        "requirement_id": "S08",
+        "verdict": "supported",
+        "comment": "School project correctly yields a partial status."
+      },
+      "O01": {
+        "requirement_id": "O01",
+        "verdict": "overstated",
+        "comment": "Quotes show duties but do not prove a 1-year duration.",
+        "suggested_status": "partial"
+      },
+      "O02": {
+        "requirement_id": "O02",
+        "verdict": "overstated",
+        "comment": "Quotes show customer assistance but no dates proving 2 years duration.",
+        "suggested_status": "partial"
+      },
+      "O03": {
+        "requirement_id": "O03",
+        "verdict": "supported",
+        "comment": "Active Directory knowledge is present."
+      },
+      "O04": {
+        "requirement_id": "O04",
+        "verdict": "overstated",
+        "comment": "Leadership role in a law firm does not prove a customer service position.",
+        "suggested_status": "missing"
+      },
+      "O05": {
+        "requirement_id": "O05",
+        "verdict": "overstated",
+        "comment": "Academic project does not support 3 years of professional experience.",
+        "suggested_status": "missing"
+      },
+      "O06": {
+        "requirement_id": "O06",
+        "verdict": "overstated",
+        "comment": "Internship duration is only a few months, failing the 2-year requirement.",
+        "suggested_status": "partial"
+      },
+      "O07": {
+        "requirement_id": "O07",
+        "verdict": "overstated",
+        "comment": "Basic school course does not support strong professional SQL skills.",
+        "suggested_status": "partial"
+      },
+      "O08": {
+        "requirement_id": "O08",
+        "verdict": "overstated",
+        "comment": "B1 English is intermediate, not professional.",
+        "suggested_status": "partial"
+      },
+      "U01": {
+        "requirement_id": "U01",
+        "verdict": "unsupported",
+        "comment": "Listed skills are unrelated to industry certifications like CompTIA.",
+        "suggested_status": "missing"
+      },
+      "U02": {
+        "requirement_id": "U02",
+        "verdict": "unsupported",
+        "comment": "A management degree does not prove understanding of network protocols.",
+        "suggested_status": "missing"
+      },
+      "U03": {
+        "requirement_id": "U03",
+        "verdict": "unsupported",
+        "comment": "Coaching football is unrelated to Windows and MacOS understanding.",
+        "suggested_status": "missing"
+      },
+      "U04": {
+        "requirement_id": "U04",
+        "verdict": "unsupported",
+        "comment": "Node.js and TypeScript do not show Kubernetes experience.",
+        "suggested_status": "missing"
+      },
+      "U05": {
+        "requirement_id": "U05",
+        "verdict": "unsupported",
+        "comment": "Power BI dashboards do not demonstrate cloud platform experience.",
+        "suggested_status": "missing"
+      },
+      "U06": {
+        "requirement_id": "U06",
+        "verdict": "unsupported",
+        "comment": "Soft skills quote does not show CI/CD practices.",
+        "suggested_status": "missing"
+      },
+      "U07": {
+        "requirement_id": "U07",
+        "verdict": "overstated",
+        "comment": "Preparatory math and physics classes do not equal an engineering or CS master's degree.",
+        "suggested_status": "missing"
+      },
+      "U08": {
+        "requirement_id": "U08",
+        "verdict": "unsupported",
+        "comment": "Operations analyst skills do not mention Active Directory.",
+        "suggested_status": "missing"
+      },
+      "S09": {
+        "requirement_id": "S09",
+        "verdict": "supported",
+        "comment": "Dates from 2021 to 2023 provide over 1 year of IT support experience.",
+        "suggested_status": null
+      },
+      "O09": {
+        "requirement_id": "O09",
+        "verdict": "overstated",
+        "comment": "Distributing equipment and instructing is not deep troubleshooting.",
+        "suggested_status": "partial"
+      },
+      "O10": {
+        "requirement_id": "O10",
+        "verdict": "overstated",
+        "comment": "Using Word and Outlook is not administering Microsoft 365 users and licences.",
+        "suggested_status": "missing"
+      },
+      "O11": {
+        "requirement_id": "O11",
+        "verdict": "overstated",
+        "comment": "Selling equipment is not supporting network infrastructure.",
+        "suggested_status": "missing"
+      }
+    }
+  }
+}

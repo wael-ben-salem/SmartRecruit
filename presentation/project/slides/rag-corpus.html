@@ -1,0 +1,16 @@
+<section id="rag-corpus" data-transition="fade" style="background:#F4F2EC;color:#1C2433;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;color:#0E5F8F;text-transform:uppercase">RAG · Knowledge base</p>
+<h2 style="font-family:'Manrope', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#16233A">Two collections, two jobs</h2>
+</div>
+<table style="font-size:24px;color:#1C2433;background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px">
+<tr style="background:#16233A"><th style="width:16%;color:#F4F2EC"></th><th style="width:42%;color:#F4F2EC">Skills KB: normalize skills</th><th style="width:42%;color:#F4F2EC">CV evidence store: find proof</th></tr>
+<tr><td><b>Source</b></td><td>ESCO, the EU skills and occupations taxonomy</td><td>Uploaded CVs at run time; HF opensporks/resumes for tuning and tests</td></tr>
+<tr><td><b>Size</b></td><td>≈13.9k skills, ≈3k occupations, FR / EN labels</td><td>2,484 CVs (PDF + text) + 5–10 job offers we write</td></tr>
+<tr><td><b>Format</b></td><td>CSV: label, alternative labels, description</td><td>PDF, extracted to text with page numbers</td></tr>
+<tr><td><b>Chunking</b></td><td>One chunk per skill: already the right unit</td><td>A: by CV section · B: recursive 500 tokens, 50 overlap</td></tr>
+<tr><td><b>Used by</b></td><td>CV and Job agents (“JS” = JavaScript)</td><td>Matching and Audit agents, filtered by candidate_id</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;width:900px;font-size:24px;color:#6B7280">SmartRecruit · Week 1 check-in · 9</p>
+<aside>ESCO solves the vocabulary problem; the CV store solves the evidence problem. We compare two chunking strategies on the CV store because that is where chunk boundaries decide whether a quote is found. ESCO figures are approximate and will be checked on the version we download.</aside>
+</section>

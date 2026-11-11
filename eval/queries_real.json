@@ -1,0 +1,68 @@
+{
+  "_doc": "Real-data retrieval test. Queries = the requirements of the real LinkedIn offer data/jobs/offers/it_support_specialist.txt, as the Matching agent would search them. CVs = the 10 IT CVs of the Kaggle Resume Dataset most similar to the offer (TF-IDF). Relevance is a SILVER label: a chunk is relevant if it matches the requirement's regex pattern. Patterns were written by Claude and must be checked by two team members; a (CV, requirement) pair with no match anywhere in the CV is excluded from the metrics. Because labels come from keywords, they favour lexical retrieval (TF-IDF): keep that bias in mind when comparing with bge-m3.",
+  "offer": "data/jobs/offers/it_support_specialist.txt",
+  "cvs": [
+    "27372171",
+    "27295996",
+    "46260230",
+    "17641670",
+    "24913648",
+    "18159866",
+    "38753827",
+    "39413067",
+    "11584809",
+    "52618188"
+  ],
+  "requirements": [
+    {
+      "id": "R01",
+      "query": "A degree or diploma in Computer Science, Management Information Systems, or a related field",
+      "pattern": "(bachelor|associate|master|degree|diploma|b\\.s\\.|a\\.a\\.s)[^\\n]{0,80}(computer|information|technology|systems|science)"
+    },
+    {
+      "id": "R02",
+      "query": "Minimum of 1 year experience providing technical support",
+      "pattern": "technical support|help ?desk|desktop support|tech support"
+    },
+    {
+      "id": "R03",
+      "query": "Minimum of 2 years in a customer service position",
+      "pattern": "customer service"
+    },
+    {
+      "id": "R04",
+      "query": "At least one industry certification such as CompTIA A+, CompTIA Net+, or Microsoft Certified Systems Administrator (MCSA)",
+      "pattern": "comptia|\\ba\\+|network\\+|\\bnet\\+|mcsa|mcse|\\bmcp\\b|ccna|mcitp"
+    },
+    {
+      "id": "R05",
+      "query": "Remote support of cloud-based solutions such as Office365 and Azure",
+      "pattern": "office ?365|\\bo365\\b|azure|exchange online"
+    },
+    {
+      "id": "R06",
+      "query": "Tier 1 troubleshooting of WAN and LAN connectivity, firewalls, routers, and Wi-Fi",
+      "pattern": "\\b(wan|lan|firewalls?|routers?|wi-?fi|wireless)\\b"
+    },
+    {
+      "id": "R07",
+      "query": "Service board triage: assign incoming service tickets and create service tickets",
+      "pattern": "ticket"
+    },
+    {
+      "id": "R08",
+      "query": "Experience with Active Directory and Azure Active Directory environments",
+      "pattern": "active directory"
+    },
+    {
+      "id": "R09",
+      "query": "Basic understanding of Windows OS and MacOS",
+      "pattern": "\\bwindows\\b|mac ?os|\\bmac\\b|os x"
+    },
+    {
+      "id": "R10",
+      "query": "New workstation setup and deployment",
+      "pattern": "(set ?up|setup|deploy|install|imag)[^\\n]{0,40}(workstation|computer|pc|desktop|laptop)|(workstation|computer|pc|desktop|laptop)s?[^\\n]{0,40}(set ?up|deploy|install|imag)"
+    }
+  ]
+}

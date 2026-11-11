@@ -1,0 +1,17 @@
+<section id="stack" data-transition="fade" style="background:#F4F2EC;color:#1C2433;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;color:#0E5F8F;text-transform:uppercase">Stack · Tools chosen</p>
+<h2 style="font-family:'Manrope', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#16233A">Light choices, each against an alternative</h2>
+</div>
+<table style="font-size:24px;color:#1C2433;background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px">
+<tr style="background:#E9E5DB"><th style="width:17%">Component</th><th style="width:29%">Choice</th><th style="width:30%">Why</th><th style="width:24%">Rejected</th></tr>
+<tr><td>Automation</td><td>n8n, self-hosted (Docker)</td><td>AI Agent and Qdrant nodes, free, data stays local</td><td>Zapier, Make: cost, less control</td></tr>
+<tr><td>LLM</td><td>[Model with vision and JSON mode, to confirm]</td><td>One model for text and page images</td><td>Large model at every step</td></tr>
+<tr><td>Embeddings</td><td>bge-m3 via Ollama</td><td>French and English, local, free</td><td>Paid embedding API</td></tr>
+<tr><td>Vector store</td><td>Qdrant</td><td>Native n8n node, payload filters</td><td>In-memory store</td></tr>
+<tr><td>PDF</td><td>Extract from File + vision fallback</td><td>Cheap path first</td><td>Vision on every page</td></tr>
+<tr><td>Output</td><td>HTML report + Google Sheet</td><td>Readable by recruiters</td><td>Full web app</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;width:900px;font-size:24px;color:#6B7280">SmartRecruit · Week 1 check-in · 13</p>
+<aside>The LLM choice is still open: we will compare cost and JSON reliability on our first test CVs in week 2 and keep API costs low.</aside>
+</section>

@@ -1,0 +1,18 @@
+<section id="pipeline" data-transition="fade" style="background:#F4F2EC;color:#1C2433;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:40px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;color:#0E5F8F;text-transform:uppercase">Architecture · n8n pipeline (draft)</p>
+<h2 style="font-family:'Manrope', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#16233A">One workflow runs everything, end to end</h2>
+</div>
+<div style="display:grid;grid-template-columns:repeat(4, 1fr);gap:24px">
+<div style="background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px"><p style="font-size:24px;font-weight:700;color:#0E5F8F">1 · Trigger</p><p style="font-size:24px;line-height:1.4;color:#4A5568">n8n Form: one job offer and three CV PDFs</p></div>
+<div style="background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px"><p style="font-size:24px;font-weight:700;color:#0E5F8F">2 · Read</p><p style="font-size:24px;line-height:1.4;color:#4A5568">PDF text extraction; vision model if scanned or multi-column</p></div>
+<div style="background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px"><p style="font-size:24px;font-weight:700;color:#0E5F8F">3 · Anonymize</p><p style="font-size:24px;line-height:1.4;color:#4A5568">Regex + NER strip name, e-mail, phone, address, photo</p></div>
+<div style="background:#16233A;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px"><p style="font-size:24px;font-weight:700;color:#F0A04B">4 · CV Agent ×3</p><p style="font-size:24px;line-height:1.4;color:#C9D2DE">One structured JSON profile per CV, run in parallel</p></div>
+<div style="background:#16233A;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px"><p style="font-size:24px;font-weight:700;color:#F0A04B">5 · Job Analysis Agent</p><p style="font-size:24px;line-height:1.4;color:#C9D2DE">Weighted must-have and nice-to-have requirements</p></div>
+<div style="background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px"><p style="font-size:24px;font-weight:700;color:#0E5F8F">6 · Index</p><p style="font-size:24px;line-height:1.4;color:#4A5568">Chunk CVs, embed, store in Qdrant with candidate_id</p></div>
+<div style="background:#16233A;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px"><p style="font-size:24px;font-weight:700;color:#F0A04B">7 · Matching Agent</p><p style="font-size:24px;line-height:1.4;color:#C9D2DE">Per requirement: retrieve evidence, decide status and score</p></div>
+<div style="background:#16233A;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:10px"><p style="font-size:24px;font-weight:700;color:#F0A04B">8 · Audit Agent</p><p style="font-size:24px;line-height:1.4;color:#C9D2DE">Checks each claim; sends back once or flags it, then report</p></div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:1400px;font-size:24px;color:#6B7280">SmartRecruit · Week 1 check-in · 6 · Dark cards are LLM agents; light cards are deterministic n8n nodes</p>
+<aside>The orchestration is the n8n workflow itself: deterministic, logged at every node, and re-runnable. LLMs are only used where judgement is needed.</aside>
+</section>

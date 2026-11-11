@@ -1,0 +1,16 @@
+<section id="prompts" data-transition="fade" style="background:#F4F2EC;color:#1C2433;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;color:#0E5F8F;text-transform:uppercase">Prompt engineering · Versioned library</p>
+<h2 style="font-family:'Manrope', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#16233A">One technique per job, one log per failure</h2>
+</div>
+<table style="font-size:24px;color:#1C2433;background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px">
+<tr style="background:#16233A"><th style="width:18%;color:#F4F2EC">Prompt</th><th style="width:30%;color:#F4F2EC">Technique (v1)</th><th style="width:26%;color:#F4F2EC">Failure we expect</th><th style="width:26%;color:#F4F2EC">Planned fix (v2)</th></tr>
+<tr><td>CV extraction</td><td>JSON schema output + 2 few-shot examples</td><td>Invents skills not in the CV</td><td>Verbatim quote required per skill</td></tr>
+<tr><td>Job analysis</td><td>Role prompting (senior recruiter) + JSON output</td><td>Soft skills tagged must-have</td><td>Explicit must / nice rules + examples</td></tr>
+<tr><td>Matching</td><td>Scoring rubric + step-by-step reasoning, JSON verdict</td><td>“Partial” used too often</td><td>Status definitions + one example each</td></tr>
+<tr><td>Audit</td><td>Verifier guardrail: answer only from the CV</td><td>Accepts paraphrased evidence</td><td>Exact-quote check in code first</td></tr>
+</table>
+<p style="font-size:24px;color:#4A5568">Each prompt lives in <b>prompts/&lt;agent&gt;/vN.md</b> under Git: role, technique, failures seen, fix, before/after output.</p>
+<p style="position:absolute;left:128px;bottom:64px;width:900px;font-size:24px;color:#6B7280">SmartRecruit · Week 1 check-in · 12</p>
+<aside>The failures listed are hypotheses for now. From week 3 the library records the failures we actually see, with before and after outputs for each key prompt.</aside>
+</section>

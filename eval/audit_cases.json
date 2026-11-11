@@ -1,0 +1,303 @@
+{
+  "_doc": "Audit test set. Each case is a claim made by the Matching agent (requirement, status, quotes). 'expected' is the verdict a careful recruiter would give: supported (the quote proves the status), overstated (related but weaker: the status should be lowered), unsupported (the quote does not concern the requirement). Quotes marked source=run come from the real run 20261028-160545-a88e88 (Kaggle CVs); source=written are written by us to cover the categories. Labels written by Claude: to be confirmed by two team members (column 'reviewed_by').",
+  "cases": [
+    {
+      "id": "S01",
+      "source": "run",
+      "requirement": "Minimum of 1 year experience providing technical support",
+      "status": "met",
+      "quotes": [
+        "Delivered local and remote Tier 1 IT support for hardware and software"
+      ],
+      "expected": "overstated",
+      "note": "Relabelled after the first run (supported -> overstated): the audit only sees the quotes, and this quote shows no duration for a 1-year minimum. Original label kept in 'label_v1'.",
+      "label_v1": "supported"
+    },
+    {
+      "id": "S02",
+      "source": "run",
+      "requirement": "Basic understanding of Windows OS and MacOS",
+      "status": "met",
+      "quotes": [
+        "Fixed any brand,Windows OS,Mac OS,Chrome OS products liquid damage."
+      ],
+      "expected": "supported"
+    },
+    {
+      "id": "S03",
+      "source": "run",
+      "requirement": "A degree or diploma in Computer Science, Management Information Systems, or a related field",
+      "status": "met",
+      "quotes": [
+        "Associate's Degree : Computer Information Systems HARRISBURG AREA COMMUNITY COLLEGE"
+      ],
+      "expected": "supported"
+    },
+    {
+      "id": "S04",
+      "source": "run",
+      "requirement": "Experience with Active Directory and Azure Active Directory environments",
+      "status": "partial",
+      "quotes": [
+        "Active Directory knowledge"
+      ],
+      "expected": "supported",
+      "note": "partial is the right level: AD knowledge, no Azure AD, no stated experience"
+    },
+    {
+      "id": "S05",
+      "source": "run",
+      "requirement": "Basic knowledge of network hardware (cabling, routers, switches)",
+      "status": "met",
+      "quotes": [
+        "Supporting of the following hardware types: servers, storage systems, routers, switches"
+      ],
+      "expected": "supported"
+    },
+    {
+      "id": "S06",
+      "source": "written",
+      "requirement": "Hands-on experience with Docker",
+      "status": "met",
+      "quotes": [
+        "Packaged every service with Docker and deployed them on Kubernetes (AKS)."
+      ],
+      "expected": "supported"
+    },
+    {
+      "id": "S07",
+      "source": "written",
+      "requirement": "Professional English (written and spoken)",
+      "status": "met",
+      "quotes": [
+        "English: C1 (TOEIC 945)"
+      ],
+      "expected": "supported"
+    },
+    {
+      "id": "S08",
+      "source": "written",
+      "requirement": "Experience with Apache Spark or another distributed processing framework",
+      "status": "partial",
+      "quotes": [
+        "Real-time dashboard with Kafka and Spark Streaming (school project, 2021)"
+      ],
+      "expected": "supported",
+      "note": "school project only: partial is correct"
+    },
+    {
+      "id": "O01",
+      "source": "run",
+      "requirement": "Minimum of 1 year experience providing technical support",
+      "status": "met",
+      "quotes": [
+        "Distribute media equipment to classrooms",
+        "Instruct professors the use of equipment"
+      ],
+      "expected": "overstated",
+      "note": "the reviewer's example: AV equipment logistics is adjacent to IT support, not IT troubleshooting; at most partial"
+    },
+    {
+      "id": "O02",
+      "source": "run",
+      "requirement": "Minimum of 2 years in a customer service position",
+      "status": "met",
+      "quotes": [
+        "Assisted customers with various types of technical issues via email, live chat and phone"
+      ],
+      "expected": "overstated",
+      "note": "customer-facing work is shown, the 2-year duration is not"
+    },
+    {
+      "id": "O03",
+      "source": "run",
+      "requirement": "Experience with Active Directory and Azure Active Directory environments",
+      "status": "met",
+      "quotes": [
+        "Active Directory knowledge"
+      ],
+      "expected": "overstated",
+      "note": "knowledge of AD only: no Azure AD, no experience"
+    },
+    {
+      "id": "O04",
+      "source": "run",
+      "requirement": "Minimum of 2 years in a customer service position",
+      "status": "met",
+      "quotes": [
+        "For the past sixteen years I was a leader of change for the largest law firm in the region"
+      ],
+      "expected": "overstated",
+      "note": "leadership of change is not a customer service position"
+    },
+    {
+      "id": "O05",
+      "source": "written",
+      "requirement": "At least 3 years of professional experience with Apache Spark",
+      "status": "met",
+      "quotes": [
+        "Spark (academic project, 2025)"
+      ],
+      "expected": "overstated"
+    },
+    {
+      "id": "O06",
+      "source": "written",
+      "requirement": "At least 2 years of professional experience with Python",
+      "status": "met",
+      "quotes": [
+        "Cleaned sales data with Python (pandas) and built weekly reports.",
+        "Data Analyst Intern - RetailOne (03/2025 - 08/2025)"
+      ],
+      "expected": "overstated",
+      "note": "5-month internship, not 2 years"
+    },
+    {
+      "id": "O07",
+      "source": "written",
+      "requirement": "Strong SQL skills (PostgreSQL or equivalent)",
+      "status": "met",
+      "quotes": [
+        "Basic SQL (school course)"
+      ],
+      "expected": "overstated"
+    },
+    {
+      "id": "O08",
+      "source": "written",
+      "requirement": "Professional English (written and spoken)",
+      "status": "met",
+      "quotes": [
+        "English: B1"
+      ],
+      "expected": "overstated",
+      "note": "B1 is below a professional working level"
+    },
+    {
+      "id": "U01",
+      "source": "run",
+      "requirement": "At least one industry certification such as CompTIA A+, CompTIA Net+, or MCSA",
+      "status": "met",
+      "quotes": [
+        "Audio Visual, Games, Coaching, Customer Service, Fast Learner, Receptionist"
+      ],
+      "expected": "unsupported"
+    },
+    {
+      "id": "U02",
+      "source": "run",
+      "requirement": "Good understanding of network protocols",
+      "status": "partial",
+      "quotes": [
+        "Bachelor of Science : Management Utica College"
+      ],
+      "expected": "unsupported"
+    },
+    {
+      "id": "U03",
+      "source": "run",
+      "requirement": "Basic understanding of Windows OS and MacOS",
+      "status": "met",
+      "quotes": [
+        "Assistant football coach for the varsity team"
+      ],
+      "expected": "unsupported"
+    },
+    {
+      "id": "U04",
+      "source": "written",
+      "requirement": "Kubernetes",
+      "status": "met",
+      "quotes": [
+        "Developed REST APIs in Node.js and TypeScript for 200k users."
+      ],
+      "expected": "unsupported"
+    },
+    {
+      "id": "U05",
+      "source": "written",
+      "requirement": "Experience with a cloud platform (Azure or AWS)",
+      "status": "partial",
+      "quotes": [
+        "Built Power BI dashboards used by 50 analysts."
+      ],
+      "expected": "unsupported"
+    },
+    {
+      "id": "U06",
+      "source": "written",
+      "requirement": "CI/CD practices",
+      "status": "met",
+      "quotes": [
+        "Hardworking and resourceful team player."
+      ],
+      "expected": "unsupported"
+    },
+    {
+      "id": "U07",
+      "source": "written",
+      "requirement": "Engineering degree or Master's degree in computer science",
+      "status": "met",
+      "quotes": [
+        "Preparatory classes in mathematics and physics (2018)"
+      ],
+      "expected": "unsupported"
+    },
+    {
+      "id": "U08",
+      "source": "written",
+      "requirement": "Experience with Active Directory environments",
+      "status": "met",
+      "quotes": [
+        "Experienced Operations Analyst with first-rate skills in organizing, problem solving and project management."
+      ],
+      "expected": "unsupported"
+    },
+    {
+      "id": "S09",
+      "source": "written",
+      "requirement": "Minimum of 1 year experience providing technical support",
+      "status": "met",
+      "quotes": [
+        "IT Support Technician - Northwind Clinics (01/2021 - 06/2023)",
+        "Resolved 30+ hardware and software tickets a week for 200 users"
+      ],
+      "expected": "supported",
+      "note": "same requirement as S01, with dates"
+    },
+    {
+      "id": "O09",
+      "source": "run",
+      "requirement": "Experience troubleshooting computer hardware and software issues for end users",
+      "status": "met",
+      "quotes": [
+        "Distribute media equipment to classrooms",
+        "Instruct professors the use of equipment"
+      ],
+      "expected": "overstated",
+      "note": "the reviewer's case WITHOUT a duration, so only the competence check can catch it; overstated or unsupported both count as caught"
+    },
+    {
+      "id": "O10",
+      "source": "written",
+      "requirement": "Experience administering Microsoft 365 (users, licences, Exchange Online)",
+      "status": "met",
+      "quotes": [
+        "Daily user of Microsoft Word, Excel and Outlook"
+      ],
+      "expected": "overstated",
+      "note": "using is not administering"
+    },
+    {
+      "id": "O11",
+      "source": "written",
+      "requirement": "Experience supporting network infrastructure (routers, switches, Wi-Fi)",
+      "status": "met",
+      "quotes": [
+        "Sold networking equipment to small businesses as a retail sales associate"
+      ],
+      "expected": "overstated",
+      "note": "selling is not supporting"
+    }
+  ]
+}

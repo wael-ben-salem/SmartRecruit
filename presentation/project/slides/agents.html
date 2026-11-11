@@ -1,0 +1,15 @@
+<section id="agents" data-transition="fade" style="background:#F4F2EC;color:#1C2433;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;color:#0E5F8F;text-transform:uppercase">Architecture · Agents</p>
+<h2 style="font-family:'Manrope', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#16233A">Four agents, one job each</h2>
+</div>
+<table style="font-size:24px;color:#1C2433;background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px">
+<tr style="background:#16233A"><th style="width:20%;color:#F4F2EC">Agent</th><th style="width:28%;color:#F4F2EC">Job</th><th style="width:26%;color:#F4F2EC">Tools</th><th style="width:26%;color:#F4F2EC">Output</th></tr>
+<tr><td>CV Agent</td><td>Turns one anonymized CV into a structured profile</td><td>PDF text, vision model, ESCO skill lookup (RAG)</td><td>JSON: skills, experience, education, each with a quote</td></tr>
+<tr><td>Job Analysis Agent</td><td>Turns the offer into weighted requirements</td><td>ESCO skill lookup (RAG)</td><td>JSON: must-have, nice-to-have, weights</td></tr>
+<tr><td>Matching Agent</td><td>Compares each requirement with each candidate</td><td>Qdrant CV retriever, scoring code node</td><td>Met / partial / missing, score, evidence</td></tr>
+<tr><td>Audit Agent</td><td>Checks that every conclusion is supported by the CV</td><td>Exact-quote check (code), CV retriever</td><td>Verified or unsupported flags, final report</td></tr>
+</table>
+<p style="position:absolute;left:128px;bottom:64px;width:900px;font-size:24px;color:#6B7280">SmartRecruit · Week 1 check-in · 7</p>
+<aside>Information flows as typed JSON between agents, so each hand-off can be validated by a schema check in n8n before the next agent runs.</aside>
+</section>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SmartRecruit</title>
+<style>
+  :root { --navy:#16233a; --cream:#f4f2ec; --card:#fbfbf8; --line:#e2ded4; --blue:#0e5f8f; --orange:#f0a04b; --text:#1c2433; --muted:#4a5568; }
+  body { margin:0; font-family:Inter, "Segoe UI", Arial, sans-serif; background:var(--cream); color:var(--text); }
+  header { background:var(--navy); color:var(--cream); padding:32px 16px; }
+  header div, main { max-width:760px; margin:0 auto; }
+  h1 { margin:0; font-size:32px; } header p { margin:8px 0 0; color:#c9d2de; }
+  main { padding:24px 16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px; margin-bottom:16px; }
+  label { display:block; font-weight:700; margin-bottom:8px; } .hint { color:var(--muted); font-size:14px; margin:4px 0 0; }
+  input[type=file] { width:100%; }
+  button { background:var(--blue); color:#fff; border:0; border-radius:10px; padding:12px 20px; font-size:16px; font-weight:700; cursor:pointer; }
+  button:disabled { opacity:.6; cursor:wait; }
+  .row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+  #status { color:var(--muted); } #status.err { color:#8a2b1d; }
+  .note { border-left:4px solid var(--orange); padding-left:12px; color:var(--muted); }
+</style>
+</head>
+<body>
+<header><div><h1>SmartRecruit</h1><p>Upload one job offer and the CVs: the n8n workflow compares them and shows the evidence.</p></div></header>
+<main>
+  <form id="f" class="card">
+    <div style="margin-bottom:20px">
+      <label for="job">Job offer</label>
+      <input id="job" name="job_offer" type="file" accept=".pdf,.txt" required>
+      <p class="hint">PDF or plain text.</p>
+    </div>
+    <div style="margin-bottom:20px">
+      <label for="cvs">CVs</label>
+      <input id="cvs" name="cvs" type="file" accept=".pdf" multiple required>
+      <p class="hint">PDF, any layout. Scanned CVs are read by the vision model.</p>
+    </div>
+    <div class="row">
+      <button id="go" type="submit">Run SmartRecruit</button>
+      <label style="font-weight:400"><input id="direct" type="checkbox"> Run without n8n (debug)</label>
+    </div>
+    <p id="status"></p>
+  </form>
+  <p class="note">The AI recommends, the recruiter decides. Names, contact details and sensitive attributes are removed before the agents see a CV.</p>
+</main>
+<script>
+document.getElementById("f").addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  const status = document.getElementById("status"), btn = document.getElementById("go");
+  const data = new FormData();
+  data.append("job_offer", document.getElementById("job").files[0]);
+  for (const f of document.getElementById("cvs").files) data.append("cvs", f);
+  const url = document.getElementById("direct").checked ? "/pipeline/run" : "/start";
+  btn.disabled = true; status.className = ""; status.textContent = "Running the agents… this takes one to three minutes.";
+  try {
+    const r = await fetch(url, { method: "POST", body: data });
+    const body = await r.json();
+    if (!r.ok) throw new Error(body.detail || r.statusText);
+    window.location.href = body.report_url;
+  } catch (e) {
+    status.className = "err"; status.textContent = "Failed: " + e.message;
+  } finally { btn.disabled = false; }
+});
+</script>
+</body>
+</html>

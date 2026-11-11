@@ -1,0 +1,986 @@
+[
+  {
+    "config": "A · section (max 300 / overlap 30) · TF-IDF",
+    "recall@1": 0.633,
+    "recall@3": 0.967,
+    "recall@5": 1.0,
+    "mrr": 0.796,
+    "ndcg@5": 0.842,
+    "chunks_per_cv": 6.7,
+    "avg_chunk_tokens": 22,
+    "precision@3": 0.389,
+    "tokens_top3": 105,
+    "per_query": [
+      {
+        "id": "Q01",
+        "rank_of_first_relevant": 2,
+        "top1": "PROFILE Data engineer with 3 years of experience building batch and streaming pipelines for finance clients."
+      },
+      {
+        "id": "Q02",
+        "rank_of_first_relevant": 2,
+        "top1": "SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI"
+      },
+      {
+        "id": "Q03",
+        "rank_of_first_relevant": 2,
+        "top1": "SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI"
+      },
+      {
+        "id": "Q04",
+        "rank_of_first_relevant": 1,
+        "top1": "EXPERIENCE Data Engineer - Nordlake Analytics (09/2023 - present) Built batch and streaming pipelines in Python and Apac"
+      },
+      {
+        "id": "Q05",
+        "rank_of_first_relevant": 1,
+        "top1": "SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI"
+      },
+      {
+        "id": "Q06",
+        "rank_of_first_relevant": 2,
+        "top1": "SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI"
+      },
+      {
+        "id": "Q07",
+        "rank_of_first_relevant": 2,
+        "top1": "[cv_A_single_column] [REMOVED: sensitive attribute]"
+      },
+      {
+        "id": "Q08",
+        "rank_of_first_relevant": 1,
+        "top1": "EXPERIENCE Data Engineer - Nordlake Analytics (09/2023 - present) Built batch and streaming pipelines in Python and Apac"
+      },
+      {
+        "id": "Q09",
+        "rank_of_first_relevant": 1,
+        "top1": "EDUCATION Engineering degree in Data Science - Esprit School of Engineering (2023) Preparatory classes in mathematics an"
+      },
+      {
+        "id": "Q10",
+        "rank_of_first_relevant": 1,
+        "top1": "LANGUAGES French: native English: C1 (TOEIC 945) Arabic: native"
+      },
+      {
+        "id": "Q11",
+        "rank_of_first_relevant": 1,
+        "top1": "EXPERIENCE Data Engineer - Nordlake Analytics (09/2023 - present) Built batch and streaming pipelines in Python and Apac"
+      },
+      {
+        "id": "Q12",
+        "rank_of_first_relevant": 3,
+        "top1": "EDUCATION Engineering degree in Data Science - Esprit School of Engineering (2023) Preparatory classes in mathematics an"
+      },
+      {
+        "id": "Q13",
+        "rank_of_first_relevant": 1,
+        "top1": "PROFILE Data engineer with 3 years of experience building batch and streaming pipelines for finance clients."
+      },
+      {
+        "id": "Q14",
+        "rank_of_first_relevant": 2,
+        "top1": "PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shipping web platforms."
+      },
+      {
+        "id": "Q15",
+        "rank_of_first_relevant": 1,
+        "top1": "SKILLS JS / TypeScript Node.js Python k8s Docker MongoDB Git"
+      },
+      {
+        "id": "Q16",
+        "rank_of_first_relevant": 1,
+        "top1": "PROJECTS Real-time dashboard with Kafka and Spark Streaming (school project, 2021)"
+      },
+      {
+        "id": "Q17",
+        "rank_of_first_relevant": 1,
+        "top1": "EXPERIENCE Full-stack Developer - Webify (01/2022 - present) Developed REST APIs in Node.js and TypeScript for 200k user"
+      },
+      {
+        "id": "Q18",
+        "rank_of_first_relevant": 3,
+        "top1": "[cv_B_two_columns]"
+      },
+      {
+        "id": "Q19",
+        "rank_of_first_relevant": 1,
+        "top1": "EDUCATION Master's degree in Software Engineering - ISI Tunis (2021) CONTACT y.[NAME]@example.org [PHONE] [URL]"
+      },
+      {
+        "id": "Q20",
+        "rank_of_first_relevant": 1,
+        "top1": "LANGUAGES Arabic: native French: C1 English: B2"
+      },
+      {
+        "id": "Q21",
+        "rank_of_first_relevant": 1,
+        "top1": "LANGUAGES Arabic: native French: C1 English: B2"
+      },
+      {
+        "id": "Q22",
+        "rank_of_first_relevant": 1,
+        "top1": "EXPERIENCE Full-stack Developer - Webify (01/2022 - present) Developed REST APIs in Node.js and TypeScript for 200k user"
+      },
+      {
+        "id": "Q23",
+        "rank_of_first_relevant": 1,
+        "top1": "PROJECTS Real-time dashboard with Kafka and Spark Streaming (school project, 2021)"
+      },
+      {
+        "id": "Q24",
+        "rank_of_first_relevant": 1,
+        "top1": "EXPERIENCE Data Analyst Intern - RetailOne (03/2025 - 08/2025) Cleaned sales data with Python (pandas) and built weekly "
+      },
+      {
+        "id": "Q25",
+        "rank_of_first_relevant": 2,
+        "top1": "SKILLS Python (pandas), SQL, MySQL, Excel, Tableau"
+      },
+      {
+        "id": "Q26",
+        "rank_of_first_relevant": 1,
+        "top1": "EDUCATION Bachelor's degree in Business Computing - ISG Tunis (2025)"
+      },
+      {
+        "id": "Q27",
+        "rank_of_first_relevant": 1,
+        "top1": "LANGUAGES French: fluent - English: B1"
+      },
+      {
+        "id": "Q28",
+        "rank_of_first_relevant": 1,
+        "top1": "LANGUAGES French: fluent - English: B1"
+      },
+      {
+        "id": "Q29",
+        "rank_of_first_relevant": 5,
+        "top1": "PROFILE Junior data analyst, curious and rigorous, looking for a first job in data."
+      },
+      {
+        "id": "Q30",
+        "rank_of_first_relevant": 2,
+        "top1": "PROFILE Junior data analyst, curious and rigorous, looking for a first job in data."
+      }
+    ]
+  },
+  {
+    "config": "A · section (max 300 / overlap 30) · bge-m3",
+    "recall@1": 0.567,
+    "recall@3": 0.9,
+    "recall@5": 0.967,
+    "mrr": 0.722,
+    "ndcg@5": 0.765,
+    "chunks_per_cv": 6.7,
+    "avg_chunk_tokens": 22,
+    "precision@3": 0.367,
+    "tokens_top3": 79,
+    "per_query": [
+      {
+        "id": "Q01",
+        "rank_of_first_relevant": 3,
+        "top1": "PROFILE Data engineer with 3 years of experience building batch and streaming pipelines for finance clients."
+      },
+      {
+        "id": "Q02",
+        "rank_of_first_relevant": 3,
+        "top1": "SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI"
+      },
+      {
+        "id": "Q03",
+        "rank_of_first_relevant": 2,
+        "top1": "SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI"
+      },
+      {
+        "id": "Q04",
+        "rank_of_first_relevant": 2,
+        "top1": "SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI"
+      },
+      {
+        "id": "Q05",
+        "rank_of_first_relevant": 1,
+        "top1": "SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI"
+      },
+      {
+        "id": "Q06",
+        "rank_of_first_relevant": 3,
+        "top1": "SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI"
+      },
+      {
+        "id": "Q07",
+        "rank_of_first_relevant": 1,
+        "top1": "SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI"
+      },
+      {
+        "id": "Q08",
+        "rank_of_first_relevant": null,
+        "top1": "[cv_A_single_column] [REMOVED: sensitive attribute]"
+      },
+      {
+        "id": "Q09",
+        "rank_of_first_relevant": 1,
+        "top1": "EDUCATION Engineering degree in Data Science - Esprit School of Engineering (2023) Preparatory classes in mathematics an"
+      },
+      {
+        "id": "Q10",
+        "rank_of_first_relevant": 1,
+        "top1": "LANGUAGES French: native English: C1 (TOEIC 945) Arabic: native"
+      },
+      {
+        "id": "Q11",
+        "rank_of_first_relevant": 3,
+        "top1": "SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI"
+      },
+      {
+        "id": "Q12",
+        "rank_of_first_relevant": 1,
+        "top1": "CERTIFICATIONS Microsoft Certified: Azure Data Engineer Associate (DP-203), 2024"
+      },
+      {
+        "id": "Q13",
+        "rank_of_first_relevant": 1,
+        "top1": "PROFILE Data engineer with 3 years of experience building batch and streaming pipelines for finance clients."
+      },
+      {
+        "id": "Q14",
+        "rank_of_first_relevant": 4,
+        "top1": "PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shipping web platforms."
+      },
+      {
+        "id": "Q15",
+        "rank_of_first_relevant": 3,
+        "top1": "PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shipping web platforms."
+      },
+      {
+        "id": "Q16",
+        "rank_of_first_relevant": 2,
+        "top1": "PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shipping web platforms."
+      },
+      {
+        "id": "Q17",
+        "rank_of_first_relevant": 2,
+        "top1": "PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shipping web platforms."
+      },
+      {
+        "id": "Q18",
+        "rank_of_first_relevant": 1,
+        "top1": "SKILLS JS / TypeScript Node.js Python k8s Docker MongoDB Git"
+      },
+      {
+        "id": "Q19",
+        "rank_of_first_relevant": 1,
+        "top1": "EDUCATION Master's degree in Software Engineering - ISI Tunis (2021) CONTACT y.[NAME]@example.org [PHONE] [URL]"
+      },
+      {
+        "id": "Q20",
+        "rank_of_first_relevant": 1,
+        "top1": "LANGUAGES Arabic: native French: C1 English: B2"
+      },
+      {
+        "id": "Q21",
+        "rank_of_first_relevant": 1,
+        "top1": "LANGUAGES Arabic: native French: C1 English: B2"
+      },
+      {
+        "id": "Q22",
+        "rank_of_first_relevant": 1,
+        "top1": "EXPERIENCE Full-stack Developer - Webify (01/2022 - present) Developed REST APIs in Node.js and TypeScript for 200k user"
+      },
+      {
+        "id": "Q23",
+        "rank_of_first_relevant": 1,
+        "top1": "PROJECTS Real-time dashboard with Kafka and Spark Streaming (school project, 2021)"
+      },
+      {
+        "id": "Q24",
+        "rank_of_first_relevant": 1,
+        "top1": "SKILLS Python (pandas), SQL, MySQL, Excel, Tableau"
+      },
+      {
+        "id": "Q25",
+        "rank_of_first_relevant": 4,
+        "top1": "SKILLS Python (pandas), SQL, MySQL, Excel, Tableau"
+      },
+      {
+        "id": "Q26",
+        "rank_of_first_relevant": 1,
+        "top1": "EDUCATION Bachelor's degree in Business Computing - ISG Tunis (2025)"
+      },
+      {
+        "id": "Q27",
+        "rank_of_first_relevant": 1,
+        "top1": "LANGUAGES French: fluent - English: B1"
+      },
+      {
+        "id": "Q28",
+        "rank_of_first_relevant": 1,
+        "top1": "LANGUAGES French: fluent - English: B1"
+      },
+      {
+        "id": "Q29",
+        "rank_of_first_relevant": 1,
+        "top1": "SKILLS Python (pandas), SQL, MySQL, Excel, Tableau"
+      },
+      {
+        "id": "Q30",
+        "rank_of_first_relevant": 2,
+        "top1": "PROFILE Junior data analyst, curious and rigorous, looking for a first job in data."
+      }
+    ]
+  },
+  {
+    "config": "B · recursive 500 / 50 · TF-IDF",
+    "recall@1": 1.0,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "mrr": 1.0,
+    "ndcg@5": 1.0,
+    "chunks_per_cv": 1.0,
+    "avg_chunk_tokens": 150,
+    "precision@3": 1.0,
+    "tokens_top3": 161,
+    "per_query": [
+      {
+        "id": "Q01",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q02",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q03",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q04",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q05",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q06",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q07",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q08",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q09",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q10",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q11",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q12",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q13",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q14",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q15",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q16",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q17",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q18",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q19",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q20",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q21",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q22",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q23",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q24",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q25",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q26",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q27",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q28",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q29",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q30",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      }
+    ]
+  },
+  {
+    "config": "B · recursive 500 / 50 · bge-m3",
+    "recall@1": 1.0,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "mrr": 1.0,
+    "ndcg@5": 1.0,
+    "chunks_per_cv": 1.0,
+    "avg_chunk_tokens": 150,
+    "precision@3": 1.0,
+    "tokens_top3": 161,
+    "per_query": [
+      {
+        "id": "Q01",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q02",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q03",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q04",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q05",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q06",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q07",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q08",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q09",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q10",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q11",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q12",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q13",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q14",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q15",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q16",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q17",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q18",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q19",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q20",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q21",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q22",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q23",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q24",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q25",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q26",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q27",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q28",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q29",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q30",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      }
+    ]
+  },
+  {
+    "config": "B' · recursive 100 / 20 · TF-IDF",
+    "recall@1": 0.9,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "mrr": 0.944,
+    "ndcg@5": 0.959,
+    "chunks_per_cv": 2.0,
+    "avg_chunk_tokens": 82,
+    "precision@3": 0.65,
+    "tokens_top3": 179,
+    "per_query": [
+      {
+        "id": "Q01",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q02",
+        "rank_of_first_relevant": 1,
+        "top1": "Packaged every service with Docker and deployed them on Kubernetes (AKS). Set up CI/CD with GitHub Actions for the data "
+      },
+      {
+        "id": "Q03",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q04",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q05",
+        "rank_of_first_relevant": 1,
+        "top1": "Preparatory classes in mathematics and physics (2018) SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Mic"
+      },
+      {
+        "id": "Q06",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q07",
+        "rank_of_first_relevant": 1,
+        "top1": "Preparatory classes in mathematics and physics (2018) SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Mic"
+      },
+      {
+        "id": "Q08",
+        "rank_of_first_relevant": 1,
+        "top1": "Packaged every service with Docker and deployed them on Kubernetes (AKS). Set up CI/CD with GitHub Actions for the data "
+      },
+      {
+        "id": "Q09",
+        "rank_of_first_relevant": 1,
+        "top1": "Packaged every service with Docker and deployed them on Kubernetes (AKS). Set up CI/CD with GitHub Actions for the data "
+      },
+      {
+        "id": "Q10",
+        "rank_of_first_relevant": 2,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q11",
+        "rank_of_first_relevant": 1,
+        "top1": "Packaged every service with Docker and deployed them on Kubernetes (AKS). Set up CI/CD with GitHub Actions for the data "
+      },
+      {
+        "id": "Q12",
+        "rank_of_first_relevant": 3,
+        "top1": "Packaged every service with Docker and deployed them on Kubernetes (AKS). Set up CI/CD with GitHub Actions for the data "
+      },
+      {
+        "id": "Q13",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q14",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q15",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q16",
+        "rank_of_first_relevant": 2,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q17",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q18",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q19",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q20",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q21",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q22",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q23",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q24",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q25",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q26",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q27",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q28",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q29",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q30",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      }
+    ]
+  },
+  {
+    "config": "B' · recursive 100 / 20 · bge-m3",
+    "recall@1": 0.867,
+    "recall@3": 1.0,
+    "recall@5": 1.0,
+    "mrr": 0.933,
+    "ndcg@5": 0.951,
+    "chunks_per_cv": 2.0,
+    "avg_chunk_tokens": 82,
+    "precision@3": 0.65,
+    "tokens_top3": 179,
+    "per_query": [
+      {
+        "id": "Q01",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q02",
+        "rank_of_first_relevant": 2,
+        "top1": "Preparatory classes in mathematics and physics (2018) SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Mic"
+      },
+      {
+        "id": "Q03",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q04",
+        "rank_of_first_relevant": 1,
+        "top1": "Packaged every service with Docker and deployed them on Kubernetes (AKS). Set up CI/CD with GitHub Actions for the data "
+      },
+      {
+        "id": "Q05",
+        "rank_of_first_relevant": 1,
+        "top1": "Packaged every service with Docker and deployed them on Kubernetes (AKS). Set up CI/CD with GitHub Actions for the data "
+      },
+      {
+        "id": "Q06",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q07",
+        "rank_of_first_relevant": 1,
+        "top1": "Preparatory classes in mathematics and physics (2018) SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Mic"
+      },
+      {
+        "id": "Q08",
+        "rank_of_first_relevant": 2,
+        "top1": "Preparatory classes in mathematics and physics (2018) SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Mic"
+      },
+      {
+        "id": "Q09",
+        "rank_of_first_relevant": 1,
+        "top1": "Packaged every service with Docker and deployed them on Kubernetes (AKS). Set up CI/CD with GitHub Actions for the data "
+      },
+      {
+        "id": "Q10",
+        "rank_of_first_relevant": 1,
+        "top1": "Preparatory classes in mathematics and physics (2018) SKILLS Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Mic"
+      },
+      {
+        "id": "Q11",
+        "rank_of_first_relevant": 1,
+        "top1": "Packaged every service with Docker and deployed them on Kubernetes (AKS). Set up CI/CD with GitHub Actions for the data "
+      },
+      {
+        "id": "Q12",
+        "rank_of_first_relevant": 2,
+        "top1": "Packaged every service with Docker and deployed them on Kubernetes (AKS). Set up CI/CD with GitHub Actions for the data "
+      },
+      {
+        "id": "Q13",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_A_single_column] [REMOVED: sensitive attribute] PROFILE Data engineer with 3 years of experience building b"
+      },
+      {
+        "id": "Q14",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q15",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q16",
+        "rank_of_first_relevant": 2,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q17",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_B_two_columns] PROFILE Full-stack developer moving towards data engineering, with 4 years of experience shi"
+      },
+      {
+        "id": "Q18",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q19",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q20",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q21",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q22",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q23",
+        "rank_of_first_relevant": 1,
+        "top1": "Junior Web Developer - PixelHouse (07/2021 - 12/2021) Built front-end features in JavaScript and React. PROJECTS Real-ti"
+      },
+      {
+        "id": "Q24",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q25",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q26",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q27",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q28",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q29",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      },
+      {
+        "id": "Q30",
+        "rank_of_first_relevant": 1,
+        "top1": "[page 1] [cv_C_scanned] [NAME][EMAIL] - [PHONE] PROFILE Junior data analyst, curious and rigorous, looking for a first j"
+      }
+    ]
+  }
+]

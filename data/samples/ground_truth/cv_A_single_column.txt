@@ -1,0 +1,26 @@
+[page 1]
+Sarah Martin
+sarah.martin@example.com | +216 22 345 678 | linkedin.com/in/sarah-martin-data | Date of birth: 14/03/1999
+PROFILE
+Data engineer with 3 years of experience building batch and streaming pipelines for finance clients.
+EXPERIENCE
+Data Engineer - Nordlake Analytics (09/2023 - present)
+Built batch and streaming pipelines in Python and Apache Spark processing 2 TB of transactions per day.
+Orchestrated 40+ daily jobs with Airflow and reduced pipeline failures by 30%.
+Packaged every service with Docker and deployed them on Kubernetes (AKS).
+Set up CI/CD with GitHub Actions for the data platform.
+Data Engineering Intern - Banque Atlas (02/2023 - 08/2023)
+Wrote SQL reporting queries on PostgreSQL for the risk team.
+Built Power BI dashboards used by 50 analysts.
+[page 2]
+EDUCATION
+Engineering degree in Data Science - Esprit School of Engineering (2023)
+Preparatory classes in mathematics and physics (2018)
+SKILLS
+Python, SQL, Apache Spark, Airflow, Docker, Kubernetes, Microsoft Azure, Git, Power BI
+LANGUAGES
+French: native
+English: C1 (TOEIC 945)
+Arabic: native
+CERTIFICATIONS
+Microsoft Certified: Azure Data Engineer Associate (DP-203), 2024

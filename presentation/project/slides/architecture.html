@@ -1,0 +1,24 @@
+<section id="architecture" data-transition="fade" style="background:#F4F2EC;color:#1C2433;font-family:'Inter', Arial, sans-serif;padding:128px 128px 160px;display:flex;flex-direction:column;gap:48px">
+<div style="display:flex;flex-direction:column;gap:16px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;color:#0E5F8F;text-transform:uppercase">Architecture · Justification</p>
+<h2 style="font-family:'Manrope', Arial, sans-serif;font-size:72px;font-weight:700;line-height:1.1;color:#16233A">A sequential chain with a verifier loop</h2>
+</div>
+<div style="display:flex;flex-direction:row;gap:32px">
+<div style="flex:1;background:#16233A;border-radius:20px;padding:48px;display:flex;flex-direction:column;gap:24px">
+<p style="font-size:24px;font-weight:700;letter-spacing:2px;color:#F0A04B;text-transform:uppercase">Chosen</p>
+<h3 style="font-family:'Manrope', Arial, sans-serif;font-size:40px;font-weight:700;line-height:1.2;color:#F4F2EC">n8n orchestrates; agents work in parallel where they can; Audit loops back once</h3>
+<ul style="font-size:28px;line-height:1.5;color:#C9D2DE">
+<li>Same path on every run: easy to audit</li>
+<li>Each step can be tested on its own</li>
+<li>Small prompts, small contexts, lower cost</li>
+</ul>
+</div>
+<div style="flex:1;display:flex;flex-direction:column;gap:20px">
+<div style="background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:30px;font-weight:700;color:#B4581A">Rejected: one big LLM call</h3><p style="font-size:24px;line-height:1.4;color:#4A5568">Three CVs and an offer in one context; invented evidence; nothing to debug</p></div>
+<div style="background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:30px;font-weight:700;color:#B4581A">Rejected: LLM router / orchestrator</h3><p style="font-size:24px;line-height:1.4;color:#4A5568">Path changes between runs; more calls; hard to justify for high-risk AI</p></div>
+<div style="background:#FBFBF8;border:1px solid #E2DED4;border-radius:16px;padding:28px;display:flex;flex-direction:column;gap:8px"><h3 style="font-size:30px;font-weight:700;color:#B4581A">Rejected: hierarchical teams</h3><p style="font-size:24px;line-height:1.4;color:#4A5568">Managers of sub-agents are overkill for four fixed steps</p></div>
+</div>
+</div>
+<p style="position:absolute;left:128px;bottom:64px;width:900px;font-size:24px;color:#6B7280">SmartRecruit · Week 1 check-in · 8</p>
+<aside>Key argument: in recruitment, being able to replay and explain exactly what happened matters more than flexibility. A fixed chain gives us that; an autonomous router does not.</aside>
+</section>

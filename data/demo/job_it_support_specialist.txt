@@ -1,0 +1,37 @@
+IT Support Specialist
+
+Job Title: IT Support Specialist
+Compensation: Based on Experience
+Reports to: Service Manager
+Department: Service and Support
+Location: Nashville, TN
+Kraft Technology Group is looking for a full-time IT Support Specialist capable of providing onsite and remote technical support. The IT Support Specialist is responsible for investigative triage, documentation, resolution when possible, and enlisting further KTG Technical resources when needed. This position is part of a talented team of system engineers and administrators who are highly customer-focused. This is an on-site role, Monday - Friday, in Nashville, TN.
+Educational and Experience Requirements
+A degree or diploma in Computer Science, Management Information Systems, or a related field is desired.
+Minimum of 1 year experience providing technical support.
+Minimum of 2 years in a customer service position.
+At least one basic industry certification, such as CompTIA A+, CompTIA Net+, or Microsoft Certified Systems Administrator (MCSA). If certifications haven't been earned prior to the start date, employees must obtain a role-relevant certification within 6 months.
+Primary Responsibilities
+Provide Service Board triage, assign incoming service tickets, and create service tickets.
+Provide ongoing phone support and resolution of IT-related issues involving Microsoft's core business applications.
+Remote Support of various cloud-based solutions such as Office365 and Azure.
+Provide Tier 1 troubleshooting support of WAN and LAN connectivity, Firewalls, routers, and Wi-Fi.
+Provide professional and positive client communication, set proper client expectations, and maintain appropriate documentation related to all service requests.
+Serve as liaison between our clients and their IT vendors to resolve issues.
+New workstation setup and deployment.
+Additional Responsibilities Work with the team to deliver customer solutions and service.
+Help properly dispatch tickets to available engineers.
+Rotational on-call schedule.
+Desired Technical Experience
+ConnectWise Manage and Automate Experience.
+Basic understanding of Windows OS and MacOS.
+Basic knowledge including Network hardware (cabling, routers, switches, etc.).
+Good understanding of Network Protocols and their meaning.
+Experience with Active Directory and Azure Active Directory (aka Entra) environments.
+Experience utilizing basic commands within Windows and MacOS.
+Benefits
+Competitive salary based on experience and qualifications.
+Discounted health insurance (medical and dental).
+Fun working environment and culture.
+Great opportunity for advancement.
+Mileage and mobile phone reimbursement.

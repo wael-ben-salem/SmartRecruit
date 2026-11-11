@@ -1,0 +1,20 @@
+Data Engineer (junior to mid-level) - NovaTech Consulting, Tunis / hybrid
+
+About the role
+You will design and run the data pipelines of our clients in banking and retail.
+
+Requirements
+- At least 2 years of professional experience with Python.
+- Strong SQL skills (PostgreSQL or equivalent).
+- Experience with Apache Spark or another distributed processing framework.
+- Hands-on experience with Docker.
+- Engineering degree or Master's degree in computer science, data science or a related field.
+- Professional English (written and spoken).
+
+Nice to have
+- Kubernetes.
+- Workflow orchestration with Airflow.
+- Experience with a cloud platform (Azure or AWS).
+- CI/CD practices.
+- French is a plus.
+- Candidates aged 25 to 30 preferred.

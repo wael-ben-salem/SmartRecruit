@@ -1,0 +1,15 @@
+[page 1]
+Amira Ben Salah
+amira.bensalah@example.net - +216 55 111 222
+PROFILE
+Junior data analyst, curious and rigorous, looking for a first job in data.
+EXPERIENCE
+Data Analyst Intern - RetailOne (03/2025 - 08/2025)
+Cleaned sales data with Python (pandas) and built weekly reports.
+Wrote SQL queries on MySQL to analyse customer churn.
+EDUCATION
+Bachelor's degree in Business Computing - ISG Tunis (2025)
+SKILLS
+Python (pandas), SQL, MySQL, Excel, Tableau
+LANGUAGES
+French: fluent - English: B1

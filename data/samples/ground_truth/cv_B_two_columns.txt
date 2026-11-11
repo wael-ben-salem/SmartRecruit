@@ -1,0 +1,31 @@
+[page 1]
+Youssef Haddad
+PROFILE
+Full-stack developer moving towards data engineering, with 4 years of experience shipping web platforms.
+EXPERIENCE
+Full-stack Developer - Webify (01/2022 - present)
+Developed REST APIs in Node.js and TypeScript for 200k users.
+Containerised the services with Docker and deployed them on k8s.
+Wrote Python scripts to clean CSV exports and load them into MongoDB.
+Junior Web Developer - PixelHouse (07/2021 - 12/2021)
+Built front-end features in JavaScript and React.
+PROJECTS
+Real-time dashboard with Kafka and Spark Streaming (school project, 2021)
+EDUCATION
+Master's degree in Software Engineering - ISI Tunis (2021)
+CONTACT
+y.haddad@example.org
++216 98 765 432
+github.com/yhaddad
+SKILLS
+JS / TypeScript
+Node.js
+Python
+k8s
+Docker
+MongoDB
+Git
+LANGUAGES
+Arabic: native
+French: C1
+English: B2

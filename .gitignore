@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+data/uploads/
+data/runs/
+data/esco/*.csv
+data/resumes/
+
+.pytest_cache/
+data/jobs/job_postings.csv
+~$*
+node_modules/

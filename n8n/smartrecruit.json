@@ -1,0 +1,197 @@
+{
+  "id": "SmartRecruitMain",
+  "name": "SmartRecruit - evidence-based CV matching",
+  "active": false,
+  "settings": { "executionOrder": "v1", "saveManualExecutions": true },
+  "nodes": [
+    {
+      "id": "b1a1c0de-0001-4000-8000-000000000001",
+      "name": "Webhook · new run",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "5b9f3c1e-6d2a-4f3b-9a51-0c8e7d2f4a11",
+      "parameters": { "httpMethod": "POST", "path": "smartrecruit", "responseMode": "responseNode", "options": {} }
+    },
+    {
+      "id": "b1a1c0de-0002-4000-8000-000000000002",
+      "name": "Read job offer",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [260, 100],
+      "retryOnFail": true, "maxTries": 2, "waitBetweenTries": 5000,
+      "parameters": {
+        "method": "POST", "url": "http://api:8000/read", "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ run_id: $json.body.run_id, doc_id: 'job' }) }}",
+        "options": { "timeout": 600000 }
+      }
+    },
+    {
+      "id": "b1a1c0de-0003-4000-8000-000000000003",
+      "name": "Job Analysis Agent",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [520, 100],
+      "retryOnFail": true, "maxTries": 2, "waitBetweenTries": 10000,
+      "parameters": {
+        "method": "POST", "url": "http://api:8000/agents/job", "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ run_id: $json.run_id }) }}",
+        "options": { "timeout": 600000 }
+      }
+    },
+    {
+      "id": "b1a1c0de-0004-4000-8000-000000000004",
+      "name": "Split candidates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [260, 500],
+      "parameters": {
+        "jsCode": "// One item per CV, so every following node runs once per candidate\nconst body = $input.first().json.body;\nreturn body.candidates.map(id => ({ json: { run_id: body.run_id, candidate_id: id } }));"
+      }
+    },
+    {
+      "id": "b1a1c0de-0005-4000-8000-000000000005",
+      "name": "Read CV (multimodal router)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [520, 500],
+      "retryOnFail": true, "maxTries": 2, "waitBetweenTries": 10000,
+      "parameters": {
+        "method": "POST", "url": "http://api:8000/read", "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ run_id: $json.run_id, doc_id: $json.candidate_id }) }}",
+        "options": { "timeout": 600000 }
+      }
+    },
+    {
+      "id": "b1a1c0de-0006-4000-8000-000000000006",
+      "name": "Anonymize",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [780, 500],
+      "parameters": {
+        "method": "POST", "url": "http://api:8000/anonymize", "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ run_id: $json.run_id, candidate_id: $json.doc_id }) }}",
+        "options": { "timeout": 60000 }
+      }
+    },
+    {
+      "id": "b1a1c0de-0007-4000-8000-000000000007",
+      "name": "CV Agent",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1040, 500],
+      "retryOnFail": true, "maxTries": 2, "waitBetweenTries": 10000,
+      "parameters": {
+        "method": "POST", "url": "http://api:8000/agents/cv", "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ run_id: $json.run_id, candidate_id: $json.candidate_id }) }}",
+        "options": { "timeout": 600000 }
+      }
+    },
+    {
+      "id": "b1a1c0de-0008-4000-8000-000000000008",
+      "name": "Index CV chunks (Qdrant)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1300, 500],
+      "retryOnFail": true, "maxTries": 2, "waitBetweenTries": 5000,
+      "parameters": {
+        "method": "POST", "url": "http://api:8000/index", "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ run_id: $json.run_id, candidate_id: $json.candidate_id }) }}",
+        "options": { "timeout": 600000 }
+      }
+    },
+    {
+      "id": "b1a1c0de-0009-4000-8000-000000000009",
+      "name": "Wait for job + CVs",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [1560, 300],
+      "parameters": { "mode": "combine", "combineBy": "combineAll", "options": {} }
+    },
+    {
+      "id": "b1a1c0de-0010-4000-8000-000000000010",
+      "name": "Matching Agent",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1820, 300],
+      "retryOnFail": true, "maxTries": 2, "waitBetweenTries": 10000,
+      "parameters": {
+        "method": "POST", "url": "http://api:8000/agents/match", "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ run_id: $json.run_id, candidate_id: $json.candidate_id }) }}",
+        "options": { "timeout": 600000 }
+      }
+    },
+    {
+      "id": "b1a1c0de-0011-4000-8000-000000000011",
+      "name": "Audit Agent (sends back to Matching once)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2080, 300],
+      "retryOnFail": true, "maxTries": 2, "waitBetweenTries": 10000,
+      "parameters": {
+        "method": "POST", "url": "http://api:8000/agents/audit", "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ run_id: $json.run_id, candidate_id: $json.candidate_id, allow_retry: true }) }}",
+        "options": { "timeout": 900000 }
+      }
+    },
+    {
+      "id": "b1a1c0de-0012-4000-8000-000000000012",
+      "name": "Collect candidates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2340, 300],
+      "parameters": {
+        "jsCode": "// Back to one item for the whole run\nconst items = $input.all();\nreturn [{ json: {\n  run_id: items[0].json.run_id,\n  audited: items.map(i => ({ candidate_id: i.json.candidate_id, retried: i.json.retried, issues_left: i.json.remaining_issues }))\n} }];"
+      }
+    },
+    {
+      "id": "b1a1c0de-0013-4000-8000-000000000013",
+      "name": "Build report",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2600, 300],
+      "parameters": {
+        "method": "POST", "url": "http://api:8000/report", "sendBody": true, "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ run_id: $json.run_id }) }}",
+        "options": { "timeout": 120000 }
+      }
+    },
+    {
+      "id": "b1a1c0de-0014-4000-8000-000000000014",
+      "name": "Respond with ranking",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [2860, 300],
+      "parameters": { "respondWith": "firstIncomingItem", "options": {} }
+    },
+    {
+      "id": "b1a1c0de-0015-4000-8000-000000000015",
+      "name": "Architecture note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [-40, -260],
+      "parameters": {
+        "width": 1000, "height": 300, "color": 7,
+        "content": "## SmartRecruit · sequential chain with parallel workers and a verifier loop\n\n**n8n is the orchestrator** (fixed, replayable path). Each HTTP node calls one agent or tool of the SmartRecruit API.\n\n- Top branch: job offer → **Job Analysis Agent** (weighted requirements, ESCO normalization)\n- Bottom branch, once per CV: **multimodal reader** (text layer, or vision model for scans / columns) → anonymization → **CV Agent** → chunks indexed in Qdrant\n- Then per candidate: **Matching Agent** (RAG on the CV) → **Audit Agent** (quote check + LLM verifier, sends rejected claims back to Matching once) → report.\n\nEvery step's output is saved in data/runs/<run_id>/ (audit trail). The AI recommends, the recruiter decides."
+      }
+    }
+  ],
+  "connections": {
+    "Webhook · new run": { "main": [[
+      { "node": "Read job offer", "type": "main", "index": 0 },
+      { "node": "Split candidates", "type": "main", "index": 0 }
+    ]] },
+    "Read job offer": { "main": [[{ "node": "Job Analysis Agent", "type": "main", "index": 0 }]] },
+    "Job Analysis Agent": { "main": [[{ "node": "Wait for job + CVs", "type": "main", "index": 1 }]] },
+    "Split candidates": { "main": [[{ "node": "Read CV (multimodal router)", "type": "main", "index": 0 }]] },
+    "Read CV (multimodal router)": { "main": [[{ "node": "Anonymize", "type": "main", "index": 0 }]] },
+    "Anonymize": { "main": [[{ "node": "CV Agent", "type": "main", "index": 0 }]] },
+    "CV Agent": { "main": [[{ "node": "Index CV chunks (Qdrant)", "type": "main", "index": 0 }]] },
+    "Index CV chunks (Qdrant)": { "main": [[{ "node": "Wait for job + CVs", "type": "main", "index": 0 }]] },
+    "Wait for job + CVs": { "main": [[{ "node": "Matching Agent", "type": "main", "index": 0 }]] },
+    "Matching Agent": { "main": [[{ "node": "Audit Agent (sends back to Matching once)", "type": "main", "index": 0 }]] },
+    "Audit Agent (sends back to Matching once)": { "main": [[{ "node": "Collect candidates", "type": "main", "index": 0 }]] },
+    "Collect candidates": { "main": [[{ "node": "Build report", "type": "main", "index": 0 }]] },
+    "Build report": { "main": [[{ "node": "Respond with ranking", "type": "main", "index": 0 }]] }
+  }
+}
